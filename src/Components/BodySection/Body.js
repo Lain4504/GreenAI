@@ -9,7 +9,6 @@ const Body = () =>{
             <Top/>
             <div className="bottom">
                 <Information/>
-                 {/* <Activity/>  */}
             </div>
         </div>
     )

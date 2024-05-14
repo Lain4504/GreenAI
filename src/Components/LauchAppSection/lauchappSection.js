@@ -1,6 +1,8 @@
 import React from 'react';
 import { InboxOutlined } from '@ant-design/icons';
 import { message, Upload } from 'antd';
+import Top from '../BodySection/TopSection/top'
+
 const { Dragger } = Upload;
 const props = {
   name: 'file',
@@ -21,7 +23,14 @@ const props = {
     console.log('Dropped files', e.dataTransfer.files);
   },
 };
-const LaunchAppSection = () => (
+
+const LaunchAppSection = () => {
+
+ return(
+  <div className="mainContent">
+    <Top/>
+
+     <div className="bottom"> 
   <Dragger {...props}>
     <p className="ant-upload-drag-icon">
       <InboxOutlined />
@@ -32,5 +41,8 @@ const LaunchAppSection = () => (
       banned files.
     </p>
   </Dragger>
-);
+  </div>
+  </div>
+)
+};
 export default LaunchAppSection;

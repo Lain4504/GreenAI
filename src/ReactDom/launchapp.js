@@ -1,8 +1,11 @@
 import React from "react";  
-import './App.css'
 import SideBar from '../Components/SideBarSection/sidebar'
 import LaunchAppSection from '../Components/LauchAppSection/lauchappSection'
-const App = () =>{
+import "../Components/SideBarSection/sidebar.css";
+import "../Components/BodySection/body.css";
+
+
+const LaunchApp = () =>{
   return(
     <>
     <div className="container">
@@ -13,4 +16,4 @@ const App = () =>{
     </>
   )
 }
-export default App;
+export default LaunchApp;

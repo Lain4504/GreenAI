@@ -1,5 +1,6 @@
 import React from "react";
 import "./sidebar.css";
+import { Link } from "react-router-dom";
 import { IoMdSpeedometer } from "react-icons/io";
 
 import logo from "../Assets/logo192.png";
@@ -23,17 +24,18 @@ const Sidebar = () => {
           </li>
 
           <li className="listItem">
-            <a href="" className="menuLink">
+            <Link to="/document" className="menuLink">
               <IoMdSpeedometer className="icon" />
               <span className="smallText">Document</span>
-            </a>
+            </Link>
           </li>
 
+       
           <li className="listItem">
-            <a href="" className="menuLink">
+            <Link to="/launchapp" className="menuLink">
               <IoMdSpeedometer className="icon" />
               <span className="smallText">Launch App</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
