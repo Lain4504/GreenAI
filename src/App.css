@@ -1,7 +1,4 @@
-
-
-
-*{
+* {
   padding: 0;
   box-sizing: border-box;
   margin: 0;
@@ -10,14 +7,14 @@
 }
 
 /*Colors and Styles(Default*/
-:root{
+:root {
   --PrimaryColor: hsl(94, 59%, 35%);
   --HoverColor: #bdf094;
   --paleGreen: hsl(96, 75%, 89%);
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(0, 0%, 18%);
   --textColor: hsl(240, 1%, 48%);
-  --bgColor:hsl(220, 10%, 94%);
+  --bgColor: hsl(220, 10%, 94%);
   --greyText: rgb(190, 190, 190);
   --inputColor: hsl(330, 12%, 97%);
 
@@ -34,57 +31,68 @@
 
 /*Default styles*/
 
-html{
+html {
   font-size: 90%;
 }
-a{
-  text-decoration: none ;
+
+a {
+  text-decoration: none;
 }
-li{
+
+li {
   list-style: none;
 }
-.icon{
+
+.icon {
   font-size: var(--h2FontSize);
 
 }
-.img{
+
+.img {
   width: 100%;
   height: auto;
 }
-.flex{
+
+.flex {
   display: flex;
   align-items: center;
 }
-.grid{
+
+.grid {
   display: grid;
   align-items: center;
   gap: 1.5rem;
 }
-.btn{
+
+.btn {
   border: none;
   outline: none;
   cursor: pointer;
   border-radius: 8px;
-  box-shadow: 0 2px 4px var(--inputColor) ;
+  box-shadow: 0 2px 4px var(--inputColor);
   padding: .8rem 1rem;
   color: var(--textColor);
 }
-.btn .icon{
+
+.btn .icon {
   margin-left: .5rem;
 }
-.btn:hover{
-  background: var(--paleGreen) ;
+
+.btn:hover {
+  background: var(--paleGreen);
   color: var(--PrimaryColor);
 }
-body{
+
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
   padding: 1rem;
 }
-.container{
-  position: relative; 
+
+.container {
+  position: relative;
   width: 95vw;
   height: 95vh;
   display: flex;
@@ -97,6 +105,32 @@ body{
 }
 
 /*Hide the scroll thumb*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
+}
+
+
+/*  MEDIA QUERIES*/
+@media screen and (max-width: 990px) {
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+  }
+
+}
+
+@media screen and (max-width: 918px) {
+  .heading {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+  }
+}
+@media screen and (max-width: 500px) {
+
+
+
 }

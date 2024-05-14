@@ -1,11 +1,13 @@
-import React from "react";
+import React from 'react';
 import './information.css';
 
-const Information = () =>{
-    return (
-        <div>
-            Information
-        </div>
-    )
-}
+
+
+const Information = () => {
+
+  return (
+<div>dfs</div>    
+  );
+};
+
 export default Information;

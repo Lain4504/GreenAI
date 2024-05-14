@@ -4,6 +4,7 @@ import "./top.css";
 import { BiSearchAlt } from "react-icons/bi";
 import video from "../../Assets/30fps.mp4";
 import img from "../../Assets/logo192.png"
+import {IoMdSpeedometer} from "react-icons/io";
 const Top = () => {
   return (
     <div className="topSection">
@@ -63,7 +64,22 @@ const Top = () => {
 
             </div>
           </div>
+          <div className="sideBarCard">
+        <IoMdSpeedometer className="icon" />
+        <div className="cardContent">
+          <div className="circle1"></div>
+          <div className="circle1"></div>
+
+          <h3>Help Center</h3>
+          <p>
+            Having trouble in Planti, please contact us from for more questions
+            .
+          </p>
+          <button className="btn">Go to help center</button>
         </div>
+      </div>
+        </div>
+
       </div>
     </div>
   );
