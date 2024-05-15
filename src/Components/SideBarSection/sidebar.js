@@ -16,11 +16,11 @@ const Sidebar = () => {
         <h3 className="divTitle">QUICK MENU</h3>
 
         <ul className="menuLists grid">
-          <li className="listItem">
-            <a href="" className="menuLink">
+        <li className="listItem">
+            <Link to="/launchapp" className="menuLink">
               <IoMdSpeedometer className="icon" />
-              <span className="smallText">Dashboard</span>
-            </a>
+              <span className="smallText">Document</span>
+            </Link>
           </li>
 
           <li className="listItem">
