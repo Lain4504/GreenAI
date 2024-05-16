@@ -1,10 +1,10 @@
 import React from "react";
 import "./top.css";
 
-import { BiSearchAlt } from "react-icons/bi";
 import video from "../../Assets/30fps.mp4";
 import img from "../../Assets/logo192.png"
 import {IoMdSpeedometer} from "react-icons/io";
+import {GithubOutlined} from "@ant-design/icons";
 const Top = () => {
   return (
     <div className="topSection">
@@ -14,16 +14,13 @@ const Top = () => {
           <p>Hello IsraTech, Welcome back !</p>
         </div>
 
-        <div className="searchBar flex">
+        {/* <div className="searchBar flex">
           <input type="text" placeholder="Search Dashboard" />
           <BiSearchAlt className="icon" />
-        </div>
+        </div> */}
         <div className="adminDiv flex">
-          <BiSearchAlt className="icon" />
-          <BiSearchAlt className="icon" />
-          <div className="adminImage">
-            <img src="" alt="Admin Image" />
-          </div>
+          <GithubOutlined  className="icon" />
+          
         </div>
       </div>
       <div className="cardSection flex">

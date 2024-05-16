@@ -1,9 +1,19 @@
 import React from "react";
 import "./sidebar.css";
 import { Link } from "react-router-dom";
-import { IoMdSpeedometer } from "react-icons/io";
 
 import logo from "../Assets/logo192.png";
+
+
+/*Import icon from ant design */
+import {
+  HomeOutlined,
+  ExclamationCircleOutlined,
+  QuestionCircleOutlined,
+  BorderlessTableOutlined,
+  GlobalOutlined,
+} from "@ant-design/icons";
+
 const Sidebar = () => {
   return (
     <div className="sideBar grid">
@@ -16,24 +26,26 @@ const Sidebar = () => {
         <h3 className="divTitle">QUICK MENU</h3>
 
         <ul className="menuLists grid">
-        <li className="listItem">
-            <Link to="/launchapp" className="menuLink">
-              <IoMdSpeedometer className="icon" />
-              <span className="smallText">Document</span>
+          <li className="listItem">
+            <Link to="/" className="menuLink">
+              <HomeOutlined className="icon" />
+              <span className="smallText">Home</span>
             </Link>
           </li>
 
           <li className="listItem">
-            <Link to="/document" className="menuLink">
-              <IoMdSpeedometer className="icon" />
+            <a
+              href="https://github.com/your-username/your-repository"
+              className="menuLink"
+            >
+              <ExclamationCircleOutlined className="icon" />
               <span className="smallText">Document</span>
-            </Link>
+            </a>
           </li>
 
-       
           <li className="listItem">
             <Link to="/launchapp" className="menuLink">
-              <IoMdSpeedometer className="icon" />
+              <QuestionCircleOutlined className="icon" />
               <span className="smallText">Launch App</span>
             </Link>
           </li>
@@ -46,14 +58,14 @@ const Sidebar = () => {
         <ul className="menuLists grid">
           <li className="listItem">
             <a href="" className="menuLink">
-              <IoMdSpeedometer className="icon" />
+              <GlobalOutlined className="icon" />
               <span className="smallText">Language</span>
             </a>
           </li>
 
           <li className="listItem">
             <a href="" className="menuLink">
-              <IoMdSpeedometer className="icon" />
+              <BorderlessTableOutlined className="icon" />
               <span className="smallText">Dark Mode</span>
             </a>
           </li>
@@ -61,7 +73,7 @@ const Sidebar = () => {
       </div>
 
       <div className="sideBarCard">
-        <IoMdSpeedometer className="icon" />
+        <QuestionCircleOutlined className="icon" />
         <div className="cardContent">
           <div className="circle1"></div>
           <div className="circle1"></div>
@@ -77,4 +89,5 @@ const Sidebar = () => {
     </div>
   );
 };
+
 export default Sidebar;

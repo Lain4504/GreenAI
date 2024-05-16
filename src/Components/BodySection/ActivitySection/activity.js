@@ -1,11 +1,14 @@
-import React from "react";
-import './activity.css'
+import React from 'react';
+import { Collapse } from 'antd';
+import "./activity.css";
+const { Panel } = Collapse;
 
-const Activity = () =>{
+function Activity() {
     return (
-        <div>
-            Activity
+        <div className="block faqBlock">
+            <a href="https://github.com/your-username/your-repository">Link to GitHub</a>
         </div>
-    )
+    );
 }
+
 export default Activity;
