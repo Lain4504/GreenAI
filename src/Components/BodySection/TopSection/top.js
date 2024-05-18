@@ -10,8 +10,8 @@ const Top = () => {
     <div className="topSection">
       <div className="headerSection flex">
         <div className="title">
-          <h1>Welcome to Pranti .</h1>
-          <p>Hello IsraTech, Welcome back !</p>
+          <h1>Welcome to GreenAI .</h1>
+          <p>Hello User, Welcome back !</p>
         </div>
 
         {/* <div className="searchBar flex">
@@ -38,14 +38,14 @@ const Top = () => {
         <div className="leftCard flex">
           <div className="main flex">
             <div className="textDiv">
-              <h1> My Stat</h1>
+              <h1> Stat</h1>
 
               <div className="flex">
                 <span>
-                  Today <br /> <small>4 Order </small>
+                  Today <br /> <small>4 èwge </small>
                 </span>
                 <span>
-                  Today <br /> <small>4 Order </small>
+                  Today <br /> <small>4 êffefe </small>
                 </span>
               </div>
 
@@ -63,7 +63,7 @@ const Top = () => {
           </div>
           <div className="sideBarCard">
         <IoMdSpeedometer className="icon" />
-        <div className="cardContent">
+        {/* <div className="cardContent">
           <div className="circle1"></div>
           <div className="circle1"></div>
 
@@ -73,7 +73,7 @@ const Top = () => {
             .
           </p>
           <button className="btn">Go to help center</button>
-        </div>
+        </div> */}
       </div>
         </div>
 
