@@ -4,7 +4,6 @@ import "./top.css";
 import video from "../../Assets/30fps.mp4";
 import img from "../../Assets/logo192.png"
 import {IoMdSpeedometer} from "react-icons/io";
-import {GithubOutlined} from "@ant-design/icons";
 const Top = () => {
   return (
     <div className="topSection">
@@ -14,14 +13,7 @@ const Top = () => {
           <p>Hello User, Welcome back !</p>
         </div>
 
-        {/* <div className="searchBar flex">
-          <input type="text" placeholder="Search Dashboard" />
-          <BiSearchAlt className="icon" />
-        </div> */}
-        <div className="adminDiv flex">
-          <GithubOutlined  className="icon" />
-          
-        </div>
+     
       </div>
       <div className="cardSection flex">
         <div className="rightCard flex">
@@ -37,25 +29,7 @@ const Top = () => {
         </div>
         <div className="leftCard flex">
           <div className="main flex">
-            <div className="textDiv">
-              <h1> Stat</h1>
-
-              <div className="flex">
-                <span>
-                  Today <br /> <small>4 èwge </small>
-                </span>
-                <span>
-                  Today <br /> <small>4 êffefe </small>
-                </span>
-              </div>
-
-              <span className="flex link">
-                Go to my orders
-              </span>
-
-            </div>
-
-
+          
 
             <div src={img} className="imgDiv">
 
@@ -63,7 +37,7 @@ const Top = () => {
           </div>
           <div className="sideBarCard">
         <IoMdSpeedometer className="icon" />
-        {/* <div className="cardContent">
+         <div className="cardContent">
           <div className="circle1"></div>
           <div className="circle1"></div>
 
@@ -73,7 +47,7 @@ const Top = () => {
             .
           </p>
           <button className="btn">Go to help center</button>
-        </div> */}
+        </div> 
       </div>
         </div>
 

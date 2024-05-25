@@ -2,7 +2,6 @@ import React from "react";
 import './body.css';
 import Top from './TopSection/top'
 import Information from './InformationSection/Information'
-// import Activity from './ActivitySection/activity'
 import { Collapse } from 'antd';
 import AppFooter from "../Footer/Footer"
 const { Panel } = Collapse;
@@ -34,7 +33,7 @@ const Body = () =>{
                 </Collapse>
             </div>
         </div>
-        <AppFooter/>
+        {/* <AppFooter/> */}
         </div>
     )
 }

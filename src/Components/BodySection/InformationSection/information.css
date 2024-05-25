@@ -1,6 +1,20 @@
-.icon-flu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; 
-}
+
+/* 
+about
+----- 
+*/
+
+.aboutBlock .contentHolder {
+    text-align: center;
+    margin: 0 0 50px;
+  }
+  
+  .aboutBlock .icon {
+    font-size: 40px;
+    color: #1890ff;
+    margin: 0 0 10px;
+  }
+  
+  .aboutBlock .content {
+    text-align: center;
+  }
