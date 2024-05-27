@@ -8,8 +8,9 @@ import logo from "../Assets/logo192.png";
 /*Import icon from ant design */
 import {
   HomeOutlined,
-  ExclamationCircleOutlined,
+  PicRightOutlined, 
   QuestionCircleOutlined,
+  RadarChartOutlined,
   BorderlessTableOutlined,
   GlobalOutlined,
 } from "@ant-design/icons";
@@ -38,14 +39,14 @@ const Sidebar = () => {
               href="https://github.com/your-username/your-repository"
               className="menuLink"
             >
-              <ExclamationCircleOutlined className="icon" />
+              <PicRightOutlined className="icon" />
               <span className="smallText">Document</span>
             </a>
           </li>
 
           <li className="listItem">
             <Link to="/launchapp" className="menuLink">
-              <QuestionCircleOutlined className="icon" />
+              <RadarChartOutlined className="icon" />
               <span className="smallText">Launch App</span>
             </Link>
           </li>

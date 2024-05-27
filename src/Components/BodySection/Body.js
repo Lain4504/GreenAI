@@ -15,10 +15,13 @@ const Body = () =>{
             <div className="block faqBlock">
             
             <div className="container-fluid">
+                <div className="titleHolder">
+
+                
             <h2>Tutorials</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dolor ut lacus interdum suscipit. Mauris non risus vel nisi lacinia fringilla ut ac lacus
 
-</p>
+</p>   </div>
                 <Collapse defaultActiveKey={['1']}>
                     <Panel header="How to setup the theme?" key="1">
                         <p>Ut per tempor latine fuisset, cu quod posidonium vix. Mei cu erant bonorum, te ius vide maiorum hendrerit. In alii instructior vix, vis et elit maluisset, usu recusabo atomorum ut. Nibh diceret dolores vix et, id omnis adhuc maiestatis vim, ei mel legendos mnesarchum argumentum. Semper nusquam urbanitas sea te.</p>
@@ -33,7 +36,7 @@ const Body = () =>{
                 </Collapse>
             </div>
         </div>
-        {/* <AppFooter/> */}
+     
         </div>
     )
 }

@@ -59,9 +59,9 @@ function LaunchAppSection() {
 
   return (
     <div className="mainContent">
-      <header>
-        <h1>App</h1>
-      </header>
+      {/* <header>
+        <h1>Launch App</h1>
+      </header> */}
       <main>
         <div>
           <p>Hướng dẫn:</p>
@@ -107,9 +107,7 @@ function LaunchAppSection() {
 
 
       </main>
-      <footer>
-        <div>Footer</div>
-      </footer>
+     
     </div>
   );
 }

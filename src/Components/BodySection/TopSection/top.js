@@ -35,6 +35,7 @@ const Top = () => {
 
             </div>
           </div>
+
           <div className="sideBarCard">
         <IoMdSpeedometer className="icon" />
          <div className="cardContent">
@@ -48,6 +49,7 @@ const Top = () => {
           </p>
           <button className="btn">Go to help center</button>
         </div> 
+        
       </div>
         </div>
 
