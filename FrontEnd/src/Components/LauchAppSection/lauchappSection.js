@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import { InboxOutlined, DownloadOutlined } from "@ant-design/icons";
 import { Upload, message, Progress, Image, Button } from "antd";
@@ -12,19 +12,40 @@ const socket = io("http://localhost:5000");
 function LaunchAppSection() {
   const [file, setFile] = useState(null);
   const [fileName, setFileName] = useState(null);
-  const [fileUrl, setFileUrl] = useState(null);
   const [uploadDisabled, setUploadDisabled] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [frameQueue, setFrameQueue] = useState([]);
+  const [currentFrame, setCurrentFrame] = useState(null);
+  const frameIntervalRef = useRef(null);
 
   useEffect(() => {
     socket.on("video_frame", (data) => {
-      setFileUrl(`data:image/jpeg;base64,${data.image}`);
+      setFrameQueue((prevQueue) => [...prevQueue, `data:image/jpeg;base64,${data.image}`]);
     });
 
     return () => {
       socket.off("video_frame");
+      if (frameIntervalRef.current) {
+        clearInterval(frameIntervalRef.current);
+      }
     };
   }, []);
+
+  useEffect(() => {
+    if (!frameIntervalRef.current && frameQueue.length > 0) {
+      frameIntervalRef.current = setInterval(() => {
+        setFrameQueue((prevQueue) => {
+          if (prevQueue.length === 0) {
+            clearInterval(frameIntervalRef.current);
+            frameIntervalRef.current = null;
+            return prevQueue;
+          }
+          setCurrentFrame(prevQueue[0]);
+          return prevQueue.slice(1);
+        });
+      }, 100); // Display a new frame every 0.1 second
+    }
+  }, [frameQueue]);
 
   const handleUpload = async (file) => {
     setUploadDisabled(true);
@@ -125,7 +146,7 @@ function LaunchAppSection() {
           </div>
         )}
         <div className="imageContainer">
-          {fileUrl && <Image src={fileUrl} alt="Preview" width={200} />}
+          {currentFrame && <Image src={currentFrame} alt="Preview" width={200} />}
         </div>
         <NoteSection />
       </main>
