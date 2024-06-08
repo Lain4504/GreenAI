@@ -3,7 +3,6 @@ import './body.css';
 import Top from './TopSection/top'
 import Information from './InformationSection/Information'
 import { Collapse } from 'antd';
-import AppFooter from "../Footer/Footer"
 const { Panel } = Collapse;
 const Body = () =>{
     return (

@@ -35,7 +35,7 @@ const Top = () => {
 
           <div className="sideBarCard">
             <IoMdSpeedometer className="icon" />
-            <div className="cardContent">
+            {/* <div className="cardContent">
               <div className="circle1"></div>
               <div className="circle1"></div>
 
@@ -44,7 +44,7 @@ const Top = () => {
                 Having trouble in GreenAI, please contact for more questions.
               </p>
               <button className="btn">Go to help Center</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

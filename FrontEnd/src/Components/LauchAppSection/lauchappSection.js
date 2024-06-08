@@ -53,6 +53,10 @@ function LaunchAppSection() {
     formData.append("myfile", file);
 
     try {
+      // Clear previous states before uploading a new file
+      setFrameQueue([]);
+      setCurrentFrame(null);
+
       await axios.post(
         "http://localhost:5000/predict",
         formData,
@@ -101,11 +105,11 @@ function LaunchAppSection() {
       <main>
         <div style={{ textAlign: 'center', marginBottom: '20px' }}>
           <p style={{ fontSize: 'larger', fontWeight: 'bold', color: 'black', fontStyle: 'italic', textDecoration: 'none' }}>
-            Detailed Instructions:
+            Instructions:
           </p>
           <ul style={{ textAlign: 'left', marginLeft: 'auto', marginRight: 'auto', maxWidth: '300px' }}>
-            <li style={{ color: 'green', marginBottom: '5px' }}>1. Drag your file or use the "Choose File" button.</li>
-            <li style={{ color: 'green', fontStyle: 'italic' }}>2. Click "Upload File".</li>
+            <li style={{ color: 'green', marginBottom: '5px' }}>1. Click or drag file to this area to upload.</li>
+            <li style={{ color: 'green', fontStyle: 'italic' }}>2. After choose a image or vieo, click "Upload File" button will appear below.</li>
           </ul>
         </div>
         <Dragger {...uploadProps} className="dragBox">

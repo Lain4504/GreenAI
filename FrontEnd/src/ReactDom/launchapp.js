@@ -3,8 +3,7 @@ import SideBar from '../Components/SideBarSection/sidebar'
 import LaunchAppSection from '../Components/LauchAppSection/lauchappSection'
 import "../Components/SideBarSection/sidebar.css";
 import "../Components/BodySection/body.css";
-// import "../Components/LauchAppSection/lauchapp.css";
-
+import "../App.css"
 const LaunchApp = () =>{
   return(
     <>
