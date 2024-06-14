@@ -36,7 +36,7 @@ const Sidebar = () => {
 
           <li className="listItem">
             <a
-              href="https://github.com/your-username/your-repository"
+              href="https://github.com/TieGarcia/GreenAI"
               className="menuLink"
             >
               <PicRightOutlined className="icon" />
