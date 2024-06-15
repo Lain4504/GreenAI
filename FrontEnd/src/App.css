@@ -27,7 +27,26 @@
   --smallFontSize: .813rem;
   --smallestFontSize: .75rem;
 }
+[data-theme="dark"] {
+  --PrimaryColor: hsl(94, 59%, 35%);
+  --HoverColor: #bdf094;
+  --paleGreen: hsl(96, 75%, 89%);
+  --whiteColor: hsl(0, 92%, 5%);
+  --blackColor: hsl(0, 0%, 100%);
+  --textColor: hsl(0, 0%, 100%);
+  --bgColor: hsl(218, 65%, 7%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(340, 11%, 5%);
 
+  /*Font and Typography*/
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
 
 /*Default styles*/
 

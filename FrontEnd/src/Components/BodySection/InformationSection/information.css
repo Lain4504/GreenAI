@@ -7,6 +7,7 @@ about
 .aboutBlock .contentHolder {
     text-align: center;
     margin: 0 0 50px;
+    color: var(--textColor);
   }
   
   .aboutBlock .icon {
@@ -17,6 +18,7 @@ about
   
   .aboutBlock .content {
     text-align: center;
+    color: var(--textColor);
   }
   /* 
 title holder
@@ -27,6 +29,7 @@ title holder
   position: relative;
   padding: 0 0 20px;
   margin: 0 0 40px;
+  color: var(--textColor);
 }
 
 .titleHolder-info:after {

@@ -48,6 +48,12 @@ function LaunchAppSection() {
   }, [frameQueue]);
 
   const handleUpload = async (file) => {
+     // Kiểm tra loại tệp
+  const allowedTypes = ['image/jpeg', 'image/png', 'video/mp4']; // Các loại tệp cho phép
+  if (!allowedTypes.includes(file.type)) {
+    message.error('Invalid file type. Please upload an image (JPEG/PNG) or a video (MP4).');
+    return;
+  }
     setUploadDisabled(true);
     const formData = new FormData();
     formData.append("myfile", file);
@@ -113,17 +119,17 @@ function LaunchAppSection() {
           </ul>
         </div>
         <Dragger {...uploadProps} className="dragBox">
-          <p className="ant-upload-drag-icon">
-            <InboxOutlined />
-          </p>
-          <p className="ant-upload-text">
-            Click or drag file to this area to upload
-          </p>
-          <p className="ant-upload-hint">
-            Support for uploading single or multiple files. Uploading company
-            data or other prohibited files is strictly prohibited.
-          </p>
-        </Dragger>
+  <p className="ant-upload-drag-icon">
+    <InboxOutlined />
+  </p>
+  <p className="ant-upload-text" style={{ color: 'var(--textColor)' }}>
+    Click or drag file to this area to upload
+  </p>
+  <p className="ant-upload-hint" style={{ color: 'var(--textColor)' }}>
+    Support for uploading single or multiple files. Uploading company data or other prohibited files is strictly prohibited.
+  </p>
+</Dragger>
+
         <div className="container-app">
           <div>
             {fileName && (

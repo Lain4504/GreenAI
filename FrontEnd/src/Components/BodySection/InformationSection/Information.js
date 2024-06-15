@@ -31,7 +31,7 @@ const Information = () => {
   return (
     <div className="block aboutBlock">
       <div className="container-fluid">
-        <div className="titleHolder">
+        <div className="titleHolder-info">
           <h2>About us</h2>
           <p> Your premier AI solution for efficient and accurate trash classification.
          </p>

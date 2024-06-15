@@ -3,16 +3,15 @@ import "./sidebar.css";
 import { Link } from "react-router-dom";
 
 import logo from "../Assets/logo192.png";
-
+import DarkMode from "../DarkMode/DarkMode";
 
 /*Import icon from ant design */
 import {
   HomeOutlined,
   PicRightOutlined, 
-  QuestionCircleOutlined,
+  QuestionCircleTwoTone,
   RadarChartOutlined,
-  BorderlessTableOutlined,
-  GlobalOutlined,
+  
 } from "@ant-design/icons";
 
 const Sidebar = () => {
@@ -55,29 +54,30 @@ const Sidebar = () => {
 
       <div className="settingsDiv">
         <h3 className="divTitle">SETTINGS</h3>
-
+       
         <ul className="menuLists grid">
+        <div className="icon-svg"> <DarkMode/> </div>
+        
           <li className="listItem">
             <a href="" className="menuLink">
-              <BorderlessTableOutlined className="icon" />
-              <span className="smallText">Dark Mode</span>
+
             </a>
           </li>
         </ul>
       </div>
 
       <div className="sideBarCard">
-        <QuestionCircleOutlined className="icon" />
+        <QuestionCircleTwoTone className="icon" />
         <div className="cardContent">
           <div className="circle1"></div>
           <div className="circle1"></div>
 
           <h3>Help Center</h3>
           <p>
-            Having trouble in GreenAI, please contact us from for more questions
+            Having trouble in GreenAI. <br/> 
             .
           </p>
-          <button className="btn">Go to help center</button>
+          <button className="btn"> Contact us by email</button>
         </div>
       </div>
     </div>

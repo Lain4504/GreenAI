@@ -1,3 +1,8 @@
+
+/*Colors and Styles(Default*/
+
+
+
 .mainContent {
   width: 86%;
   height: 100%;
@@ -32,6 +37,7 @@
   position: relative;
   padding: 0 0 20px;
   margin: 0 0 40px;
+  color: var(--textColor);
   
   
 }
@@ -50,11 +56,46 @@
 .titleHolder h2 {
   font-size: 28px;
   margin: 0;
+  color: var(--textColor);
 }
 
 .titleHolder p {
   margin-top: 20px; /* Added margin-top here */
+  color: var(--textColor);
 }
+/* Default theme styles for Collapse */
+.ant-collapse-header {
+  background-color: var(--bgColor);
+  color: var(--textColor);
+}
+
+.ant-collapse-content {
+  background-color: var(--bgColor);
+  color: var(--textColor);
+}
+
+/* Existing dark mode styles */
+[data-theme="dark"] .ant-collapse-header {
+  background-color: var(--bgColor);
+  color: var(--textColor);
+}
+
+[data-theme="dark"] .ant-collapse-content {
+  background-color: var(--bgColor);
+  color: var(--textColor);
+}
+
+/* Add dark mode styles for Panel headers */
+[data-theme="dark"] .ant-collapse-item .ant-collapse-header {
+  background-color: var(--inputColor); /* Adjust color as needed */
+  color: var(--textColor); /* Adjust color as needed */
+}
+
+[data-theme="dark"] .ant-collapse-item-active .ant-collapse-header {
+  background-color: var(--PrimaryColor); /* Adjust color as needed */
+  color: var(--whiteColor); /* Adjust color as needed */
+}
+
 
 /* responsive */
 @media only screen and (max-width: 991px) {

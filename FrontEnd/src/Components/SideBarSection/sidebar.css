@@ -105,8 +105,8 @@
 
         .icon {
             position: absolute;
-            background: var(-- HoverColor);
-            border: 10px solid var(-- whiteColor);
+            background: var(--HoverColor);
+            border: 10px solid var(--whiteColor);
             font-size: 3rem;
             border-radius: 50%;
             top: -8px;
@@ -133,14 +133,14 @@
 
         p {
             font-size: var(--normalFontSize);
-            color: var(--textColor);
+            color: black;
             padding-bottom: 1rem;
             font-weight: 500;
         }
 
         .btn {
             position: relative;
-            color: var(--textColor);
+            color: black;
             z-index: 1000;
 
         }
@@ -225,6 +225,7 @@
 
 @media screen and (max-width: 390px) {
     .sideBar {
+        
         .menuDiv,
         .settingsDiv {
             text-align: center;
@@ -246,4 +247,7 @@
             }
         }
     }
+    
 }
+
+  

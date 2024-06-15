@@ -34,7 +34,7 @@ const Top = () => {
           </div>
 
           <div className="sideBarCard">
-            <IoMdSpeedometer className="icon" />
+            {/* <IoMdSpeedometer className="icon" /> */}
             {/* <div className="cardContent">
               <div className="circle1"></div>
               <div className="circle1"></div>

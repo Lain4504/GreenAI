@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tabs } from 'antd';
-
+import "../NoteSection/NoteSection.css"
 const { TabPane } = Tabs;
 
 const items = [

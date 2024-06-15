@@ -1,0 +1,28 @@
+.ant-tabs-tab {
+    color: var(--blackColor); /* Màu chữ cho nhãn tab */
+  }
+  
+  .ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: var(--PrimaryColor); /* Màu chữ cho nhãn tab khi được chọn */
+  }
+  .ant-tabs-tabpane {
+    background-color: var(--bgColor); /* Màu nền cho nội dung tab */
+    color: var(--textColor); /* Màu chữ cho nội dung tab */
+    padding: 20px; /* Thêm padding để tách biệt nội dung với mép của tab */
+  }
+  /* Đảm bảo các nhãn (labels) trong tab có màu chữ và màu nền đúng */
+.ant-tabs-nav .ant-tabs-tab {
+    color: var(--blackColor); /* Màu chữ cho nhãn tab */
+  }
+  
+  /* Đảm bảo tab được chọn có màu chữ và màu nền khác */
+  .ant-tabs-nav .ant-tabs-tab-active {
+    color: var(--PrimaryColor); /* Màu chữ cho tab được chọn */
+  }
+  
+  /* Đảm bảo nội dung của các tab có màu chữ và màu nền đúng */
+  .ant-tabs-tabpane {
+    color: var(--textColor); /* Màu chữ cho nội dung tab */
+    padding: 20px; /* Thêm padding để tách biệt nội dung với mép của tab */
+  }
+  
