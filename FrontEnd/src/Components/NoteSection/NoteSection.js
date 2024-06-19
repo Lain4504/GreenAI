@@ -43,6 +43,7 @@ const items = [
         <p>
           <strong>How to handle:</strong> Dispose of plastic bags in trash bins. Consider reducing plastic bag usage by using reusable bags or opting for biodegradable alternatives where possible.
         </p>
+
       </div>
     ),
   },

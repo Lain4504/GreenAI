@@ -133,7 +133,7 @@ function LaunchAppSection() {
         <div className="container-app">
           <div>
             {fileName && (
-              <p>
+               <p style={{ color: 'var(--textColor)' }}>
                 Selected File: <b>{fileName}</b>
               </p>
             )}
