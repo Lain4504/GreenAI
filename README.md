@@ -8,7 +8,7 @@ _Frontend:_ The frontend is built using React.js, providing a user-friendly inte
 
 _Backend:_ The backend is powered by YOLOv9, an advanced object detection model used for accurately classifying and identifying various types of waste.
 
-_API Integration__:_ APIs are used to seamlessly connect the frontend with the backend, enabling the efficient processing and retrieval of data.
+_API Integration:_ APIs are used to seamlessly connect the frontend with the backend, enabling the efficient processing and retrieval of data.
 
 
 
